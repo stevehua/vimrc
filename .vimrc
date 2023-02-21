@@ -1,4 +1,4 @@
-" Set hybrid line numbering
+" Enable hybrid line numbering
 set number relativenumber
 
 " Set 256 colors in terminal
