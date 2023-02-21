@@ -7,7 +7,7 @@ set t_Co=256
 " Enable syntax highlighting 
 syntax on
 
-" Set theme to slate
+" Set theme
 colorscheme koehler 
  
 " Set tabs to 4 spaces
@@ -23,20 +23,19 @@ set hlsearch
 " Clear search highlighting when pressing ESC
 nnoremap <esc> :noh<return><esc>
 
-" Enable insert cursor to display as an underscore when using SSH
+" Enable insert mode cursor to display as an underscore when using SSH
+" https://vim.fandom.com/wiki/Change_cursor_shape_in_different_modes
 let &t_SI.="\e[5 q" "SI = INSERT mode
 let &t_SR.="\e[1 q" "SR = REPLACE mode (i.e. when Insert is pressed on keyboard)
 let &t_EI.="\e[1 q" "EI = NORMAL mode (ELSE)
 
-"Cursor settings:
-
+" Cursor settings numbering for above:
 "  1 -> blinking block
 "  2 -> solid block 
 "  3 -> blinking underscore
 "  4 -> solid underscore
 "  5 -> blinking vertical bar
 "  6 -> solid vertical bar
-
 
 " Mapping Shift + Up and Shift + Down arrows to move lines up and down
 " (Alt modifier does not work in Windows Terminal)
