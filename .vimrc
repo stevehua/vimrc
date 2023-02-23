@@ -21,7 +21,7 @@ set incsearch
 set hlsearch
 
 " Clear search highlighting when pressing ESC
-nnoremap <esc> :noh<return><esc>
+nnoremap <silent> <esc> :noh<return><esc>
 
 " Enable insert mode cursor to display as an underscore when using SSH
 " https://vim.fandom.com/wiki/Change_cursor_shape_in_different_modes
