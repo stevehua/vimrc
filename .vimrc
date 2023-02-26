@@ -20,8 +20,10 @@ set expandtab
 set incsearch
 set hlsearch
 
-" Clear search highlighting when pressing ESC
-nnoremap <silent> <esc> :noh<return><esc>
+" Clear search highlighting when pressing ESC (Need TermResponse to avoid entering VIM in replace mode)
+augroup no_highlight
+    autocmd TermResponse * nnoremap <silent> <esc> :noh<return><esc>
+augroup END
 
 " Enable insert mode cursor to display as an underscore when using SSH
 " https://vim.fandom.com/wiki/Change_cursor_shape_in_different_modes
@@ -50,3 +52,9 @@ vnoremap <S-Up> :m '<-2<CR>gv=gv
 
 " Remove audio bell sound on error or when scrolling to edge of page margins
 set visualbell
+
+" Scrolling keybinds
+nnoremap <C-y> 3<C-y>
+nnoremap <C-e> 3<C-e>
+nnoremap <C-d> 22jzz
+nnoremap <C-u> 22kzz
