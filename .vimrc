@@ -21,6 +21,7 @@ set incsearch
 set hlsearch
 
 " Clear search highlighting when pressing ESC (Need TermResponse to avoid entering VIM in replace mode)
+" https://stackoverflow.com/questions/11940801/mapping-esc-in-vimrc-causes-bizarre-arrow-behaviour/16027716#16027716
 augroup no_highlight
     autocmd TermResponse * nnoremap <silent> <esc> :noh<return><esc>
 augroup END
@@ -54,6 +55,7 @@ vnoremap <S-Up> :m '<-2<CR>gv=gv
 set visualbell
 
 " Scrolling keybinds
+" https://www.reddit.com/r/vim/comments/fnyb2e/how_do_you_not_get_lost_using_cd_cu_when_scrolling/
 nnoremap <C-y> 3<C-y>
 nnoremap <C-e> 3<C-e>
 nnoremap <C-d> 22jzz
