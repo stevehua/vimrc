@@ -1,3 +1,6 @@
+" Set non compatible mode (fixes arrow keys typing letters)
+set nocompatible
+
 " Enable hybrid line numbering
 set number relativenumber
 
