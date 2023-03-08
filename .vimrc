@@ -17,6 +17,9 @@ set expandtab
 set incsearch
 set hlsearch
 
+"This unsets the "last search pattern" register by hitting return
+nnoremap <CR> :noh<CR><CR>
+
 " Clear search highlighting when pressing ESC
 " augroup no_highlight
 "    autocmd TermResponse * nnoremap <silent> <esc> :noh<return><esc>
