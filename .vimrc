@@ -61,7 +61,6 @@ nnoremap <C-e> 3<C-e>
 nnoremap <C-d> 22jzz
 nnoremap <C-u> 22kzz
 
-
 " Disable 'Press ENTER or type command to continue" prompt on alt + tab whilst using SSH
 " https://stackoverflow.com/questions/43533302/e349-no-identifier-under-cursor
 nnoremap ^] <Nop>
