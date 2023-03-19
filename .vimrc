@@ -61,3 +61,6 @@ nnoremap <C-u> 22kzz
 " Disable 'Press ENTER or type command to continue" prompt on alt + tab whilst using SSH
 " https://stackoverflow.com/questions/43533302/e349-no-identifier-under-cursor
 nnoremap ^] <Nop>
+
+ " Ensure that there are a few lines above the cursor, useful when scrolling down
+ set scrolloff=8
